@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REIL</title>
+    
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="Img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="HomeCss/Home.css">
+</head>
+<body>
+    <section class="Cabecera">
+        
+ <!-------------------------------Menú------------------------------------>      
+        <header>
+            
+            <a href="Reil.html" class="logo">Re<span>il</span></a>
+            <ul>
+                <li><a href="Reil.html">Inicio</a></li>
+                <li><a href="#" download="CatálogoReil_2021-1">Catálogo</a></li>
+                <li><a href="Sucursales.html">Sucursales</a></li>
+                <li><a href="#">Nosotros</a></li>
+                <li><a href="#">Servicio al Cliente</a></li>
+            </ul>
+        </header>
+        <script type="text/javascript">
+            window.addEventListener("scroll", function(){
+                var header = document.querySelector("header");
+                header.classList.toggle("sticky", window.scrollY > 0)
+            })
+        </script>
+    </section>
+    <Section class="Cuerpo">
+        <img src="HomeCss/Fondo.png" class="fondo">
+        <img src="HomeCss/Balata.png" class="balata">
+        <div class="contenido">
+            <h2>Seguridad Real en tu Camino<br><span>REIL</span></h2>
+            <a href="#">Buscar Balatas</a>
+        </div>
+        <ul class="redes">
+            <li><a href=""><img src="HomeCss/facebook.png"></a></li>
+            <li><a href=""><img src="HomeCss/twitter.png"></a></li>
+            <li><a href=""><img src="HomeCss/instagram.png"></a></li>
+        </ul>
+        <div class="textobloque">
+            <div class="bloque">
+                <ul><li><a href="">Aviso de Privacidad</a></li>
+                    <li><a href="">Términos y Condiciones</a></li>
+                    <li><a href="">Copyright</a></li>
+                </ul>
+            </div>
+        </div>
+    </Section>
+    <script type="text/javascript">
+        document.addEventListener("mousemove", function(e){
+            const fondo = document.querySelector('.fondo');
+            const balata = document.querySelector('.balata');
+            const contenido = document.querySelector('.contenido');
+
+            fondo.style.width = 100 + e.pageX/100 + '%';
+            fondo.style.height = 100 + e.pageX/100 + '%';
+
+            balata.style.right = 100 + e.pageX/50 + 'px';
+
+            contenido.style.left = 100 + e.pageX/10 +'px'
+        })
+    </script>
+    
+</body>
+</html>
